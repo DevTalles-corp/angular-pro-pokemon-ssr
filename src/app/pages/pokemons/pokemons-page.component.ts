@@ -72,7 +72,6 @@ export default class PokemonsPageComponent implements OnInit {
     this.pokemonsService
       .loadPage(pageToLoad)
       .pipe(
-        delay(500),
         tap(() =>
           this.router.navigate([], { queryParams: { page: pageToLoad } })
         ),
