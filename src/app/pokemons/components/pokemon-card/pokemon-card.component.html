@@ -1,7 +1,8 @@
 <div
   class="bg-blue-500 animate-fadeIn h-44 bg-opacity-25 rounded-lg shadow-md flex flex-col p-4 items-center justify-center cursor-pointer"
-  [routerLink]="['/pokemons', pokemon().id]"
+  [routerLink]="['/pokemons', pokemon().name]"
 >
+  <!-- [routerLink]="['/pokemons', pokemon().id]" -->
   <img
     [src]="pokemonImage()"
     [alt]="pokemon().name"
