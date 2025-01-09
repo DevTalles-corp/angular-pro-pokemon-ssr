@@ -7,11 +7,10 @@ import {
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'page-contact',
-  standalone: true,
-  imports: [],
-  templateUrl: './contact-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'page-contact',
+    imports: [],
+    templateUrl: './contact-page.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class ContactPageComponent implements OnInit {
   private title = inject(Title);
