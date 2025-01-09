@@ -13,11 +13,10 @@ import { tap } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'pokemon-page',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './pokemon-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'pokemon-page',
+    imports: [CommonModule],
+    templateUrl: './pokemon-page.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class PokemonPageComponent implements OnInit {
   private pokemonsService = inject(PokemonsService);

@@ -9,11 +9,10 @@ import {
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'page-pricing',
-  standalone: true,
-  imports: [],
-  templateUrl: './pricing-page.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'page-pricing',
+    imports: [],
+    templateUrl: './pricing-page.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export default class PricingPageComponent implements OnInit {
   private title = inject(Title);
