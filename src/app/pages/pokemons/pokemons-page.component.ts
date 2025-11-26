@@ -17,10 +17,10 @@ import { SimplePokemon } from '../../pokemons/interfaces';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'pokemons-page',
-    imports: [PokemonListComponent, PokemonListSkeletonComponent, RouterLink],
-    templateUrl: './pokemons-page.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'pokemons-page',
+  imports: [PokemonListComponent, PokemonListSkeletonComponent, RouterLink],
+  templateUrl: './pokemons-page.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class PokemonsPageComponent {
   private pokemonsService = inject(PokemonsService);
@@ -41,10 +41,11 @@ export default class PokemonsPageComponent {
   public loadOnPageChanged = effect(
     () => {
       this.loadPokemons(this.currentPage());
-    },
-    {
-      allowSignalWrites: true,
     }
+    // Ya no es necesario, escribir es ahora siempre permitido
+    // {
+    //   allowSignalWrites: true,
+    // }
   );
 
   public loadPokemons(page = 0) {
