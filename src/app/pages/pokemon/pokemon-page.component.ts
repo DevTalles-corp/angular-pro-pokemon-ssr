@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import {
   ChangeDetectionStrategy,
   Component,
@@ -14,7 +14,7 @@ import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'pokemon-page',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './pokemon-page.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
