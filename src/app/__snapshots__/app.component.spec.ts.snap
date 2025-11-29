@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppComponent > should match snapshot 1`] = `"<app-navbar><nav class="test-class"><a href="test-link">Test Link</a></nav></app-navbar><div class="max-w-3xl m-auto mt-16 px-3"><router-outlet></router-outlet></div>"`;

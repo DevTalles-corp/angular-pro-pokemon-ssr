@@ -67,4 +67,10 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('app-navbar')).toBeTruthy();
     expect(compiled.querySelector('router-outlet')).toBeTruthy();
   });
+
+  it('should match snapshot', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    expect(compiled.innerHTML).toMatchSnapshot();
+  });
 });
