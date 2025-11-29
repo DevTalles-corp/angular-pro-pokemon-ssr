@@ -26,6 +26,7 @@ export const routes: Routes = [
     path: '**',
     redirectTo: () => {
       // const authService = inject(AuthService)
+      // console.log('redirectTo');
 
       return 'about';
     },
